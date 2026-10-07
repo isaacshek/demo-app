@@ -1,4 +1,3 @@
-// src/components/LinkButton/index.tsx
 "use client";
 
 import Link from "next/link";

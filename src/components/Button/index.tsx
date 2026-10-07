@@ -2,7 +2,9 @@ import type { ButtonProps } from "@mui/material/Button";
 import Button from "@mui/material/Button";
 
 function makeButton(options: ButtonProps) {
-  return (props: ButtonProps) => <Button {...props} {...options} />;
+  return function ButtonComponent(props: ButtonProps) {
+    return <Button {...props} {...options} />;
+  };
 }
 
 export const TextButton = makeButton({
