@@ -1,11 +1,11 @@
-import Box from "@mui/material/Box";
-import type { StackProps } from "@mui/material/Stack";
-import Stack from "@mui/material/Stack";
-import { sxMerge } from "@/src/utils/sx-merge";
+import Box from '@mui/material/Box';
+import type { StackProps } from '@mui/material/Stack';
+import Stack from '@mui/material/Stack';
+import { sxMerge } from '@/src/utils/sx-merge';
 
 export interface ProgressStepperProps extends Omit<
   StackProps,
-  "direction" | "spacing"
+  'direction' | 'spacing'
 > {
   numSteps: number;
   activeStep: number;
@@ -29,7 +29,7 @@ const ProgressStepper = ({
       aria-valuetext={`Step ${currentStep} of ${numSteps}`}
       direction="row"
       spacing={1}
-      sx={sxMerge({ width: "100%" }, sx)}
+      sx={sxMerge({ width: '100%' }, sx)}
       {...rest}
     >
       {Array.from({ length: numSteps }).map((_, i) => (
@@ -39,7 +39,7 @@ const ProgressStepper = ({
             flex: 1,
             height: 4,
             borderRadius: 2,
-            backgroundColor: i <= activeStep ? "#4194cb" : "#d3d3d3",
+            backgroundColor: i <= activeStep ? '#4194cb' : '#d3d3d3',
           }}
         />
       ))}

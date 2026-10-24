@@ -1,6 +1,6 @@
-import type { Preview } from "@storybook/react";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { theme } from "../src/theme";
+import type { Preview } from '@storybook/react';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { theme } from '../src/theme';
 
 const preview: Preview = {
   decorators: [

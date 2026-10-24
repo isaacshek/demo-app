@@ -1,5 +1,5 @@
-import type { ButtonProps } from "@mui/material/Button";
-import Button from "@mui/material/Button";
+import type { ButtonProps } from '@mui/material/Button';
+import Button from '@mui/material/Button';
 
 function makeButton(options: ButtonProps) {
   return function ButtonComponent(props: ButtonProps) {
@@ -8,16 +8,16 @@ function makeButton(options: ButtonProps) {
 }
 
 export const TextButton = makeButton({
-  color: "secondary",
-  variant: "text",
+  color: 'secondary',
+  variant: 'text',
 });
 
 export const PrimaryButton = makeButton({
-  color: "primary",
-  variant: "contained",
+  color: 'primary',
+  variant: 'contained',
 });
 
 export const SecondaryButton = makeButton({
-  color: "primary",
-  variant: "outlined",
+  color: 'primary',
+  variant: 'outlined',
 });

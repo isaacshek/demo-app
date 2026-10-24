@@ -8,16 +8,12 @@ interface ProductCatalogProps {
   products: Product[];
 }
 
-export function ProductCatalog({
-  products,
-}: ProductCatalogProps) {
+export function ProductCatalog({ products }: ProductCatalogProps) {
   const router = useRouter();
   return (
     <ProductList
       products={products}
-      onSelectProduct={(p) =>
-        router.push(`/products/${p.id}`)
-      }
+      onSelectProduct={(p) => router.push(`/products/${p.id}`)}
     />
   );
 }

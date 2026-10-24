@@ -62,10 +62,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Routes
 
-| Route            | Description                                                          |
-| ---------------- | -------------------------------------------------------------------- |
-| `/`              | Searchable product list                                              |
-| `/products/[id]` | Product detail page, statically generated, with its own metadata     |
+| Route            | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| `/`              | Searchable product list                                          |
+| `/products/[id]` | Product detail page, statically generated, with its own metadata |
 
 Unknown product IDs render a custom not-found page.
 

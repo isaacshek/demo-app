@@ -11,7 +11,9 @@ export default function ProductNotFound() {
         <Typography variant="h3" component="h1">
           {constants.productNotFound.title}
         </Typography>
-        <Typography color="text.secondary">{constants.productNotFound.description}</Typography>
+        <Typography color="text.secondary">
+          {constants.productNotFound.description}
+        </Typography>
         <LinkButton href="/" variant="contained">
           {constants.backToProducts}
         </LinkButton>

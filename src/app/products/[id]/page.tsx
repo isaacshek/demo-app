@@ -13,13 +13,17 @@ interface ProductPageProps {
   params: Promise<{ id: string }>;
 }
 
-const getProduct = cache(async (id: string) => products.find((p) => p.id === id));
+const getProduct = cache(async (id: string) =>
+  products.find((p) => p.id === id)
+);
 
 export function generateStaticParams() {
   return products.map((p) => ({ id: p.id }));
 }
 
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
   const { id } = await params;
   const product = await getProduct(id);
 
@@ -38,7 +42,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   };
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({
+  params,
+}: ProductPageProps) {
   const { id } = await params;
   const product = await getProduct(id);
 
@@ -55,13 +61,19 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <LinkButton href="/" sx={{ alignSelf: 'flex-start' }}>
           ← {constants.backToProducts}
         </LinkButton>
-        <Stack direction="row" justifyContent="space-between" alignItems="center">
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+        >
           <Typography variant="h3" component="h1">
             {product.name}
           </Typography>
           {product.status && <Chip label={product.status} />}
         </Stack>
-        <Typography color="text.secondary">{product.description}</Typography>
+        <Typography color="text.secondary">
+          {product.description}
+        </Typography>
         <Typography variant="h5" fontWeight={700}>
           {price}
         </Typography>

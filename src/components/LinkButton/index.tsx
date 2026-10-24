@@ -1,9 +1,12 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Button, { type ButtonProps } from "@mui/material/Button";
+import Link from 'next/link';
+import Button, { type ButtonProps } from '@mui/material/Button';
 
-export type LinkButtonProps = Omit<ButtonProps<typeof Link>, "component"> & {
+export type LinkButtonProps = Omit<
+  ButtonProps<typeof Link>,
+  'component'
+> & {
   href: string;
 };
 

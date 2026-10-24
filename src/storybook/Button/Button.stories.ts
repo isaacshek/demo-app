@@ -1,13 +1,13 @@
-import { Button } from "./Button";
+import { Button } from './Button';
 
-import type { Meta, StoryObj } from "@storybook/nextjs-vite";
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 const meta = {
-  title: "Components/Buttons/Label",
+  title: 'Components/Buttons/Label',
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "centered",
+    layout: 'centered',
     docs: {
       source: {
         code: `
@@ -26,20 +26,20 @@ const meta = {
     },
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    size: { control: "radio", options: ["small", "medium", "large"] },
-    label: { control: "text" },
-    disabled: { control: "boolean" },
+    size: { control: 'radio', options: ['small', 'medium', 'large'] },
+    label: { control: 'text' },
+    disabled: { control: 'boolean' },
     className: {
-      control: { type: "radio" },
-      options: ["", "compactRadius"],
+      control: { type: 'radio' },
+      options: ['', 'compactRadius'],
     },
   },
   args: {
-    label: "Button",
-    size: "medium",
+    label: 'Button',
+    size: 'medium',
   },
 } satisfies Meta<typeof Button>;
 
@@ -54,7 +54,7 @@ Hovered.parameters = {
   pseudo: { hover: true },
   docs: {
     canvas: {
-      sourceState: "none",
+      sourceState: 'none',
     },
   },
 };
@@ -64,7 +64,7 @@ Focus.parameters = {
   pseudo: { focus: true },
   docs: {
     canvas: {
-      sourceState: "none",
+      sourceState: 'none',
     },
   },
 };
@@ -74,7 +74,7 @@ FocusVisible.parameters = {
   pseudo: { focusVisible: true },
   docs: {
     canvas: {
-      sourceState: "none",
+      sourceState: 'none',
     },
   },
 };
@@ -86,7 +86,7 @@ export const Disabled: Story = {
   parameters: {
     docs: {
       canvas: {
-        sourceState: "none",
+        sourceState: 'none',
       },
     },
   },
@@ -97,7 +97,7 @@ Active.parameters = {
   pseudo: { active: true },
   docs: {
     canvas: {
-      sourceState: "none",
+      sourceState: 'none',
     },
   },
 };

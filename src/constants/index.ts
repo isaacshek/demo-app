@@ -6,6 +6,6 @@ export const constants = {
       'We couldn&apos;t find the product you were looking for. It may have been removed, or the link may be incorrect.',
   },
   search: {
-    'noResults': 'No results match your search.'
-  }
+    noResults: 'No results match your search.',
+  },
 };

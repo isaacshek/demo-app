@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 import {
   TextButton,
   PrimaryButton,
   SecondaryButton,
-} from "@/src/components/Button";
-import type { ButtonProps as MuiButtonProps } from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+} from '@/src/components/Button';
+import type { ButtonProps as MuiButtonProps } from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 export interface ButtonProps extends MuiButtonProps {
   label: string;

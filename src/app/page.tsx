@@ -1,9 +1,10 @@
-import { products } from "@/src/data/products";
-import { ProductCatalog } from "@/src/components/ProductCatalog";
-import ProgressStepper from "@/src/components/ProgressStepper";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
+import { products } from '@/src/data/products';
+import { ProductCatalog } from '@/src/components/ProductCatalog';
+import ProgressStepper from '@/src/components/ProgressStepper';
+import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Chat from '../components/Chat';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <ProgressStepper numSteps={2} activeStep={0} />
       </Stack>
       <ProductCatalog products={products} />
+      <Chat />
     </Container>
   );
 }
